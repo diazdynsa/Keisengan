@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-content fade-in">
+        <h1>Selamat Datang di Kegabutan Seorang Diaz</h1>
+        <p>Website ini dibuat atas dasar ke-isengan diri ini (Ya, itu aja).</p>
+        <a href="{{ url_for('portfolio') }}" class="cta-button">Lihat My Kisah</a>
+    </div>
+</section>
+<section class="intro">
+    <h2>Kenali Dias Pake Z Lebih Dekat</h2>
+    <div class="intro-grid">
+        <div class="intro-card fade-in">
+            <h3>Active Listener</h3>
+            <p>Karena kadang yang orang butuh bukan jawaban, tapi didengar tanpa disela.</p>
+        </div>
+        <div class="intro-card fade-in">
+            <h3>Music Enthusiast</h3>
+            <p>Aku percaya bahwa setiap lagu punya waktu dan tempatnya sendiri.</p>
+        </div>
+        <div class="intro-card fade-in">
+            <h3>Hiker</h3>
+            <p>Walaupun baru beberapa gunung yang dikunjungi hehe.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="portfolio">
+    <h1>My Kisah</h1>
+    <div class="portfolio-grid">
+        <div class="portfolio-item fade-in">
+            <img src="{{ url_for('static', filename='images/fesnuk.png') }}" alt="Proyek 1">
+            <h3>Scroll Fesnuk</h3>
+            <p>Sudah jadi rutinitas, entah untuk apa, tapi selalu kulakukan.</p>
+        </div>
+        <div class="portfolio-item fade-in">
+            <img src="{{ url_for('static', filename='images/AtapAsbes.png') }}" alt="Proyek 2">
+            <h3>Anggota Tim Atap Asbes</h3>
+            <p>Mereka tak bersuara lantang di ruang debat, tapi lihai membaca makna di balik dinding yang retak. Tawa mereka lahir bukan karena lucu, melainkan karena kampus terlalu jujur dalam diamnya.</p>
+        </div>
+        <div class="portfolio-item fade-in">
+            <img src="{{ url_for('static', filename='images/Kalkulus.jpg') }}" alt="Proyek 3">
+            <h3>"Aku Cinta Kalkulus</h3>
+            <p>Aku berkata demikian, padahal itu cara paling sopan untuk mengungkapkan ketidaksukaan :v</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="contact">
+    <h1>Hubungi Saya</h1>
+    <div class="contact-content fade-in">
+        <p>Jika kamu tertarik melihat My Kisah secara lengkap cukup hubungi kontak dibawah.</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> diazd@email.com</p>
+            <p><strong>Telepon:</strong> +6283111193026</p>
+            <p><strong>Alamat:</strong> Jl. Nganu No. 12, Bandoeng, Indonesia</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="cta-button">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
