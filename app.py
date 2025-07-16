@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -19,4 +20,5 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Ambil port dari environment atau gunakan 5000 sebagai default
+    app.run(host='0.0.0.0', port=port, debug=False)  # Gunakan host '0.0.0.0' untuk akses publik
